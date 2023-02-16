@@ -46,7 +46,7 @@
                     products: this.products,
                     prices: this.prices,
                 };
-                axios.post ('http://localhost:3000/users/split', data).then((response) => {
+                axios.post ('https://spinterra.online/users/split', data).then((response) => {
                     this.splitUrl = response.data.checkout_url;
                     console.log(response);
                 })
