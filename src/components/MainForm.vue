@@ -46,7 +46,7 @@
                     products: this.products,
                     prices: this.prices,
                 };
-                axios.post ('https://spinterra.online/users/split', data).then((response) => {
+                axios.post ('https://split.spinterra.ru/users/split', data).then((response) => {
                     this.splitUrl = response.data.checkout_url;
                     console.log(response);
                 })
